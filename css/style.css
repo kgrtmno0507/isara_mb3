@@ -5,6 +5,11 @@
         ベース
 --------------------*/
 
+
+.warp{
+	overflow: hidden;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -33,13 +38,12 @@ a{
 
 .heading{
     font-size:3.0rem;
-    padding: 50px;
     position: relative;
-    padding: 30px;
-    width:860px;
+    padding: 30px 0;
+    width:50%;
     display:inline-block;
     box-sizing: border-box;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 	text-align: center;
     
 } 
@@ -65,7 +69,7 @@ a{
 img {
     padding: 25px 0;
     height: 40px;
-    width:120px
+    width:120px;
 }
 
 .header-left-p{
@@ -97,6 +101,14 @@ img {
     opacity: 1;
 }
 
+.btn-header ul li{
+	list-style-type :none;
+}
+
+.btn-header ul li:nth-of-type(1){
+		display: none;
+	}
+
 /*--------------------
     メインここから
 --------------------*/
@@ -108,11 +120,10 @@ img {
     padding: 150px 0 100px 0;
     width: 100%;
     background: url(../images/main.jpg);
-	-webkit-background-size: cover;
 	background-size: cover;
 }
 
-.main-heading {
+ .main-img-p{
     font-size:2.8rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -123,7 +134,7 @@ img {
     height: 100px;
 }
 
-.main-img-p { 
+ .main-heading{ 
     font-weight: 600;
     font-size:2.0rem;
     letter-spacing: 1px;
@@ -159,10 +170,11 @@ img {
     padding: 30px;
     background-color: #DA6B64;
     border-radius: 50px;
-    font-size:2.2rem;
-    margin: 20px 0;
+    font-size:2.6rem;
+    margin: 20px auto;
 	display: block;
 	color:white;
+	width: 80%;
 }
 
 /*-------稼ぐ力ここから-------*/
@@ -172,10 +184,22 @@ img {
     padding-top:30px;
     font-size:1.8rem;
     line-height: 30px;
-    padding-bottom: 150px;
-	background: url(../images/introbottom.jpg);
-	-webkit-background-size: cover;
-	background-size: cover;
+    padding-bottom: 100px;
+	background: url(../images/introbottom.jpg) center center;
+	background-size:100% auto;
+
+}
+
+.money .heading{
+	width: 70%;
+}
+
+.money p{
+	margin-bottom: 30px;
+}
+
+.none-1{
+	display: none;
 }
 
 
@@ -228,12 +252,16 @@ img {
 	margin-bottom: 80px;
 	position: absolute;
 	top:-50px;
-	left:45%;
+	left:48%;
 	
 }
 
 .what{
 	text-align: center;
+}
+
+.what .heading{
+	width: 70%;
 }
 
 .what p{
@@ -250,8 +278,8 @@ img {
 
 .skills{
 	background-color: #fff;
-	width: 1170px;
-    margin: 30px auto;
+	width: 90%;
+    margin: 30px 0;
     padding: 30px;
     background-color: #fff;
     border: 2px solid #ebb94d;
@@ -293,7 +321,10 @@ img {
 	padding: 60px 0 10px;
 	text-align: center;
 	color:#fff;
-	background-image: url(../images/aboutsecondbg.jpg)
+	background-image: url(../images/aboutsecondbg.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+
 }
 
 .support-title{
@@ -323,11 +354,11 @@ img {
 	text-align: center;
 	display: inline-block;
 	vertical-align: middle;
-	margin-left:20px;
 	font-weight: 600;
-	width: 300px;
+	width: 310px;
 	height:100px;
 	border-radius: 5px;
+	margin-right: 10px;
 }
 
 .step-title{
@@ -393,12 +424,12 @@ img {
 
 .merit{	
 	background-color: #FEF5E0;
-	padding:35px 0 55px 0;
+	padding:35px  0 55px 0;
 	text-align: center;
 }
 
 .merit .heading{	
-	text-align: center;
+	width: 70%;
 }
 
 .heading p{
@@ -411,16 +442,20 @@ img {
 	line-height: 40px;
 }
 
+
+
 .merit-content{
 	float:left;
-	width:33%;
+	width: 33%;
 	display: inline-block;
 }
 
 .merit-content-images img{
-	height:180px;
-	width: 350px;
+	height:100%;
+	width:90%;
 	padding-bottom: 0px;
+	margin: 0 auto;
+	vertical-align: bottom;
 }
 
 .merit-content-text{
@@ -428,7 +463,7 @@ img {
 	color:#333333;
 	font-size:1.6rem;
 	line-height: 26px;
-	width: 350px;
+	width: 90%;
 	letter-spacing: 1px;
 	padding-left: 20px;
 	
@@ -443,30 +478,33 @@ img {
 
 .comeback{
 	clear: both;
-	margin:55px 0 45px 0;
+	margin:55px 0 4px 0;
 	display: inline-block;
-	padding:55px 200px;
+	padding:55px 160px;
 	background-color:#fff;
 	border:2px solid #ebb94d;
 	font-weight: 600;
 	color:#333;
+	text-align: center;
 }
 
 .color-fix{
 	font-size:2.8rem;
 	line-height: 45px;
 	color:#ebb94d;
+	width: 100%;
 }
 
 .color-fixfix{
 	line-height: 32px;
 	font-size:2.0rem;
-	
+	width: 100%;
 }
 
 .color-fixfixfix{
 	font-size:1.6rem;
 	line-height: 26px;
+	width: 100%;
 }
 
 .attention p{
@@ -552,6 +590,10 @@ img {
 
 .teacher-p{
 	text-align: left;
+}
+
+#teacher-p2{
+	margin-top: 30px;
 }
 
 /*------自由ここから------*/
@@ -777,7 +819,7 @@ vertical-align: center;
 
 .sutdent-heading img{
 	height: auto;
-	width: auto;
+	width: 90%;
 	overflow: hidden;
 }
 
@@ -833,8 +875,9 @@ vertical-align: center;
 
 .flowline{
 	height:65px;
-	width: auto;
+	width: 70%;
 	padding: 0;
+	margin: 0;
 }
 
 /*-----なぜバンコクなのか？------*/
@@ -913,15 +956,10 @@ vertical-align: center;
 	float:left;
 	border-radius: 50%;
 	padding: 50px 20px;
+	margin:60px 65px;
 }
 
-.content1{
-	margin:60px 85px;
-}
 
-.content2{
-	margin:60px 35px;
-}
 
 .participate-content-title{
 	font-style: normal;
@@ -937,7 +975,7 @@ vertical-align: center;
 	font-size: 2.8rem;
 	line-height: 45px;
 	padding-top:80px;
-	width: 650px;
+	width: 60%;
 	display: inline-block;
 	position: relative;
 	top:20px;
@@ -1058,7 +1096,7 @@ form{
 
 input,
 textarea{
-	width: 810px;
+	width: 95%;
 	border-radius: 5px;
 	padding-left: 10px;
 }
@@ -1135,6 +1173,10 @@ textarea{
 	border-bottom:2px solid #000;
 }
 
+/*---------------
+	フッター
+---------------*/
+
 footer{
 	background-color: #ECECEC;
 	text-align: center;
@@ -1163,10 +1205,18 @@ footer a:hover{
 	border-collapse: collapse;
 }
 
-#twitter{
-	color: #000;
+footer li{
+	display: inline-block;
 }
 
-#twitter:hover{
-	border:none;
+.fb-like{
+	position: relative;
+  
+    top: -2px;
 }
+
+/*
+
+
+
+*/
